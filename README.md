@@ -9,6 +9,7 @@
 ## MySQL
 
 Schema: conrad
+
 Table: jobs
 
 ```sql
