@@ -1,8 +1,9 @@
+<?php require_once('front/query/index.php'); ?>
+
 <!doctype html>
 <html lang="en">
 <head>
     <?php require_once('layout/header.php'); ?>
-    <?php require_once('front/query/index.php'); ?>
     <title>首頁 - Job Board 職缺報報</title>
     <link rel="stylesheet" href="css/style.css">
 </head>

@@ -1,12 +1,13 @@
+<?php require_once('query/update.php'); ?>
+<?php
+    $d = new DateTime($row['expired_at']);
+    $row['expired_at'] = $d->format('Y-m-d\TH:i');
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
     <?php require_once('../layout/header.php'); ?>
-    <?php require_once('query/update.php'); ?>
-    <?php
-        $d = new DateTime($row['expired_at']);
-        $row['expired_at'] = $d->format('Y-m-d\TH:i');
-    ?>
     <title>更新職缺 - 管理後台</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>

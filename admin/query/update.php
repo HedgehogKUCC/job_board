@@ -9,4 +9,4 @@
 
     $row = $response->fetch_assoc();
 
-    $sql = "SELECT now() FROM jobs";
+    # $sql = "SELECT now() FROM jobs";
