@@ -1,0 +1,173 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.jobs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.job__card {
+    width: 33%;
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.job__card h3 {
+    margin-top: 0;
+}
+
+.job__card a {
+    text-decoration: none;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+
+.job__card .apply {
+    border-color: #FFA400;
+    background: #FFA400;
+    color: #000;
+}
+
+.job__card .apply:hover {
+    background: transparent;
+    color: #FFA400;
+}
+
+.job__card .feature {
+    margin-top: 16px;
+    text-align: right;
+}
+
+.job__card .edit {
+    border-color: #058ED9;
+    color: #058ED9;
+}
+
+.job__card .edit:hover {
+    border-color: #058ED9;
+    background: #058ED9;
+    color: #fff;
+}
+
+.job__card .delete {
+    border-color: #B8336A;
+    color: #B8336A;
+}
+
+.job__card .delete:hover {
+    border-color: #B8336A;
+    background: #B8336A;
+    color: #fff;
+}
+
+.job__card .title {
+    height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.job__card .title.deleted {
+    text-decoration: line-through;
+}
+
+.job__card .desc {
+    height: 150px;
+    overflow: hidden;
+}
+
+.job__card .salary {
+    font-size: 14px;
+}
+
+.job__card__footer {
+    position: relative;
+    margin-top: 8px;
+    text-align: right;
+}
+
+.job__card__footer .date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 13px;
+    text-align: left;
+    color: #0B5563;
+}
+
+.job__card__footer .expired {
+    margin-top: 10px;
+    text-align: center;
+    background: #F9FBB2;
+}
+
+form {
+    margin: 0 auto;
+    width: 380px;
+}
+
+form .form-control {
+    margin-bottom: 15px;
+}
+
+form .btn__group {
+    display: flex;
+    justify-content: space-between;
+}
+
+form button[type='reset'],
+form button[type='submit'] {
+    background: transparent;
+    cursor: pointer;
+    width: 49%;
+    border: 1px solid transparent;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+form button[type='reset'] {
+    border-color: #323232;
+}
+
+form button[type='reset']:hover {
+    box-shadow: inset 0 0 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+form button[type='submit'] {
+    border-color: #009FFD;
+    background: #009FFD;
+}
+
+form button[type='submit']:hover {
+    background: transparent;
+    box-shadow: inset 0 0 15px 10px rgba(0, 159, 253, 0.8);
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+.form-control input,
+.form-control textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
